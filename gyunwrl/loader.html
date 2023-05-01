@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Loader Page</title>
+	<style>
+		/* Center the loader animation */
+		.loader {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	</style>
+</head>
+<body>
+	<!-- Add your loader animation here -->
+	<div class="loader">
+		<img src="gyun startup.gif">
+	</div>
+
+	<!-- Add JavaScript to hide the loader and show the main content -->
+	<script>
+		window.addEventListener('load', function() {
+			// Hide the loader
+			document.querySelector('.loader').style.display = 'none';
+
+			// Show the main content
+			document.querySelector('.content').style.display = 'block';
+		});
+	</script>
+</body>
+</html>
